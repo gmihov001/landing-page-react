@@ -1,6 +1,7 @@
 //import react into the bundle
 import React from "react";
 import ReactDOM from "react-dom";
+import PropType from "prop-types";
 
 //include bootstrap npm library into the bundle
 import "bootstrap";
@@ -18,7 +19,13 @@ ReactDOM.render(
 	<div>
 		<Navbar />
 		<MainPanel />
-		<Cards />
+		<Cards
+			text1="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque."
+			text2="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto."
+			text3="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque."
+			text4="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto."
+			imageUrl="https://via.placeholder.com/500x325"
+		/>
 	</div>,
 	document.querySelector("#app")
 );
