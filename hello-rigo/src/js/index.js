@@ -9,16 +9,7 @@ import "bootstrap";
 import "../styles/index.scss";
 
 //import your own components
-import { Navbar } from "./component/home.js";
-import { MainPanel } from "./component/home.js";
-import { Cards } from "./component/home.js";
+import { Home } from "./component/home.js";
 
 //render your react application
-ReactDOM.render(
-	<div>
-		<Navbar />
-		<MainPanel />
-		<Cards />
-	</div>,
-	document.querySelector("#app")
-);
+ReactDOM.render(<Home />, document.querySelector("#app"));
